@@ -1,0 +1,4 @@
+. tests/variables
+if [ ! -z "$VER_JSON" ]; then
+	./sadf -j tests/data0.tmp -- -A | $VER_JSON >/dev/null;
+fi

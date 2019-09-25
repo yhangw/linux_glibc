@@ -1,0 +1,4 @@
+. tests/variables
+if [ ! -z "$VER_JSON" ]; then
+	./mpstat -A -o JSON | $VER_JSON >/dev/null;
+fi
